@@ -1,4 +1,4 @@
-TinyXML-2
+TinyXML-2 [![TravisCI Status](https://travis-ci.org/leethomason/tinyxml2.svg?branch=master)](https://travis-ci.org/leethomason/tinyxml2) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/github/leethomason/tinyxml2?branch=master&svg=true)](https://ci.appveyor.com/project/leethomason/tinyxml2)
 =========
 ![TinyXML-2 Logo](http://www.grinninglizard.com/tinyxml2/TinyXML2_small.png)
 
@@ -177,7 +177,7 @@ will have the Value() of "Far & Away" when queried from the XMLText object,
 and will be written back to the XML stream/file as an ampersand. 
 
 Additionally, any character can be specified by its Unicode code point:
-The syntax "&#xA0;" or "&#160;" are both to the non-breaking space characher. 
+The syntax `&#xA0;` or `&#160;` are both to the non-breaking space character. 
 This is called a 'numeric character reference'. Any numeric character reference
 that isn't one of the special entities above, will be read, but written as a
 regular code point. The output is correct, but the entity syntax isn't preserved.

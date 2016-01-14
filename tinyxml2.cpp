@@ -200,6 +200,7 @@ void StrPair::Reset()
 
 void StrPair::SetStr( const char* str, int flags )
 {
+    TIXMLASSERT( str );
     Reset();
     size_t len = strlen( str );
     TIXMLASSERT( _start == 0 );
@@ -830,6 +831,7 @@ void XMLNode::DeleteChild( XMLNode* node )
     TIXMLASSERT( node );
     TIXMLASSERT( node->_document == _document );
     TIXMLASSERT( node->_parent == this );
+    Unlink( node );
     DeleteNode( node );
 }
 
